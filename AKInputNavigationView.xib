@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <navigationBar contentMode="scaleToFill" id="C0M-BD-t9L" customClass="AKInputNavigationView" customModule="pcyp_ios" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+            <items>
+                <navigationItem id="DIC-6g-1ka">
+                    <nil key="title"/>
+                    <barButtonItem key="leftBarButtonItem" title="◀︎" id="Q9b-uJ-ePl">
+                        <connections>
+                            <action selector="touchUpInside:" destination="C0M-BD-t9L" id="Ymh-XP-QOd"/>
+                        </connections>
+                    </barButtonItem>
+                    <button key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NUG-JX-N5d">
+                        <rect key="frame" x="96" y="7" width="128" height="30"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <state key="normal" title="Tap to dismiss">
+                            <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="touchUpInside:" destination="C0M-BD-t9L" eventType="touchUpInside" id="Qdm-Xv-OBz"/>
+                        </connections>
+                    </button>
+                    <barButtonItem key="rightBarButtonItem" title="▶︎" id="n2M-Vm-jyu">
+                        <connections>
+                            <action selector="touchUpInside:" destination="C0M-BD-t9L" id="9Np-6B-HZ3"/>
+                        </connections>
+                    </barButtonItem>
+                </navigationItem>
+            </items>
+            <connections>
+                <outlet property="centerButton" destination="NUG-JX-N5d" id="8tW-VN-RSd"/>
+                <outlet property="leftButton" destination="Q9b-uJ-ePl" id="077-KG-mxS"/>
+                <outlet property="rightButton" destination="n2M-Vm-jyu" id="nC2-0y-COh"/>
+            </connections>
+            <point key="canvasLocation" x="420" y="1020"/>
+        </navigationBar>
+    </objects>
+</document>
